@@ -3,7 +3,7 @@ set -euo pipefail
 
 tracked_raw="$(
   git ls-files |
-    grep -E '(^|/)(_data/raw|data-raw/raw)(/|$)|clea_lc_[^/]*[.]RData$' ||
+    grep -E '(^|/)(_data/raw|data-raw/raw)(/|$)|(^|/)clea_(lc_)?[0-9]{8}[^/]*[.](RData|pdf|xlsx)$' ||
     true
 )"
 
@@ -15,7 +15,7 @@ fi
 
 history_raw="$(
   git rev-list --objects --all |
-    grep -E ' (_data/raw|data-raw/raw)(/|$)| clea_lc_[^/]*[.]RData$' ||
+    grep -E ' (_data/raw|data-raw/raw)(/|$)| clea_(lc_)?[0-9]{8}[^/]*[.](RData|pdf|xlsx)$' ||
     true
 )"
 

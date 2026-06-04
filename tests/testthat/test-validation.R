@@ -14,6 +14,20 @@ test_that("validation reports an invalid seat total", {
   expect_equal(unname(seat_total$failures), 1)
 })
 
+test_that("validation reports an applicable exclusion-guarantee violation", {
+  dta <- simple_fixture()
+  dta$pv <- c(0.4, 0.6)
+  dta$s <- c(1, 0)
+  dta$ps <- c(1, 0)
+  dta$threshold <- FALSE
+  dta$iso3 <- "GBR"
+
+  result <- cleaclean:::validate_simple_systems(dta)
+  exclusion <- result[result$test == "exclusion guarantee", ]
+
+  expect_equal(unname(exclusion$failures), 1)
+})
+
 test_that("source loading rejects absent and mismatched raw data", {
   expect_error(
     cleaclean:::load_clea_source("not-a-real-file.RData", "abc"),
