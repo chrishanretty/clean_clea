@@ -32,6 +32,11 @@ retains CLEA sentinel values and 888 duplicate rows where no audited correction
 has been made. Classifications and derived statistics inherit limitations in
 CLEA, V-Dem, and the manually assembled supporting sources.
 
+The installed package is approximately 31 MB because both public datasets are
+included deliberately. This size is expected for a data package and allows
+users to load the documented datasets without downloading the undistributable
+raw CLEA bundle.
+
 The MIT licence applies to the package code. It does not independently
 relicense the source data or supersede any terms attached to the underlying
 sources. Users should cite CLEA and the relevant original sources when using

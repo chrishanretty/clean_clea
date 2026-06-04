@@ -16,8 +16,13 @@ test_that("representative direct corrections remain applied", {
 test_that("manual Swedish patches remain applied", {
   sweden <- clean_clea[clean_clea$id %in% c(584, 585), ]
 
+  expect_equal(nrow(sweden), 359)
   expect_true(all(sweden$mag > 0))
   expect_true(all(sweden$seat >= 0 | is.na(sweden$seat)))
+  expect_equal(
+    as.numeric(tapply(sweden$seat, sweden$id, sum, na.rm = TRUE)),
+    c(230, 222)
+  )
 })
 
 test_that("representative structural corrections remain applied", {
