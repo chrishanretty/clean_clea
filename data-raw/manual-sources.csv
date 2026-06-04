@@ -1,0 +1,17 @@
+file,purpose,source
+bfa_2007.csv,Adds the Burkina Faso 2007 national list,https://github.com/jackobailey/burkina_faso_2007_election
+lso_2017.csv,Adds parties missing from the Lesotho 2017 national constituency,https://en.wikipedia.org/wiki/2017_Lesotho_general_election#By_district
+mdg_2013.csv,Adds rows missing from Madagascar 2013,https://web.archive.org/web/20170916034337/http://www.hcc.gov.mg/elections/legislatives2013/deputes
+missing_electoral_systems.csv,Fills and corrects electoral-system classifications,Compiled manually from election-specific sources
+swe_1924.csv,Adds Swedish 1924 magnitudes and seats,https://share.scb.se/ov9993/data/historisk%20statistik/SOS%201911-%2FValstatistiken%2FRiksdagsmannavalen%20(SOS)%201909-1968%2FValstatistik-Riksdagsmannavalen-1922-1923-1924.pdf
+swe_1928.csv,Adds Swedish 1928 magnitudes and seats,https://web.archive.org/web/20150924122135/http://www.scb.se/Grupp/Hitta_statistik/Historisk_statistik/_Dokument/Valstatistiken/Valstatistik%20Riksdagsmannavalen%201925%201926%201927%201928.pdf
+swe_1932.csv,Records Swedish 1932 magnitudes and seats,https://share.scb.se/ov9993/data/historisk%20statistik/SOS%201911-%2FValstatistiken%2FRiksdagsmannavalen%20(SOS)%201909-1968%2FValstatistik-Riksdagsmannavalen-1929-1930-1931-1932.pdf
+swe_1936.csv,Records Swedish 1936 magnitudes and seats,Statistics Sweden historical election publications
+swe_1940.csv,Adds Swedish 1940 magnitudes and seats,https://runeberg.org/svda/1940/0123.html
+swe_1948.csv,Adds Swedish 1948 magnitudes and seats,https://runeberg.org/svda/1948/0078.html
+swe_1952.csv,Adds Swedish 1952 magnitudes and seats,https://runeberg.org/svda/1952/0077.html
+swe_1956.csv,Adds Swedish 1956 magnitudes and seats,https://runeberg.org/svda/1956/0088.html
+swe_1958.csv,Adds Swedish 1958 magnitudes and seats,https://runeberg.org/svda/1958/0047.html
+swe_1964.csv,Adds Swedish 1964 magnitudes and seats,https://web.archive.org/web/20150924122655/http://www.scb.se/Grupp/Hitta_statistik/Historisk_statistik/_Dokument/Valstatistiken/Valstatistik%20Riksdagsmannavalen%201961-1964%20I.pdf
+swe_1968.csv,Adds Swedish 1968 magnitudes and seats,https://web.archive.org/web/20150924122727/http://www.scb.se/Grupp/Hitta_statistik/Historisk_statistik/_Dokument/Valstatistiken/Valstatistik%20Riksdagsmannavalen%201965-1968%201.pdf
+un_geoscheme.csv,Maps country codes to UN regions and subregions,https://unstats.un.org/unsd/methodology/m49/

@@ -1,0 +1,15 @@
+on:
+  push:
+  pull_request:
+
+name: privacy
+
+jobs:
+  no-raw-clea:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Check Git tree and history
+        run: .github/scripts/check-no-raw-clea.sh

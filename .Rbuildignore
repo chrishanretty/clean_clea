@@ -1,0 +1,12 @@
+^\.github$
+^\.lintr$
+^\.Rproj\.user$
+^\.Rhistory$
+^\.DS_Store$
+^cleaclean\.Rproj$
+^data-raw$
+^renv$
+^renv\.lock$
+^_data$
+^_scripts$
+^LICENSE\.md$

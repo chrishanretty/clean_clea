@@ -4,3 +4,7 @@
 .Ruserdata
 .Rproj.user/
 _codex/
+_data/raw/
+data-raw/raw/
+cleaclean.Rcheck/
+*.tar.gz

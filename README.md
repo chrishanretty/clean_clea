@@ -1,10 +1,82 @@
-# clean_clea
 
-`clean_clea` is my attempt to clean up [the Constituency-Level Elections Archive](https://electiondataarchive.org/data-and-documentation/clea-lower-chamber-elections-archive/) and to subset these data to [simple electoral systems](https://www.cambridge.org/core/books/votes-from-seats/components-of-simple-electoral-systems/CE8DD54C39683D46093EB299F29A49C9).
+# cleaclean
 
-The repo contains all of the data and code needed to audit or replicate my changes. Wherever possible, I have also included links to the sources that I have used. Note that, in some cases, where data appeared unreliable, I have opted to remove them from the data.
+`cleaclean` provides cleaned constituency-level election results derived
+from the [Constituency-Level Elections
+Archive](https://electiondataarchive.org/data-and-documentation/clea-lower-chamber-elections-archive/).
+It also provides an analysis-ready subset of elections conducted under
+simple electoral systems.
 
-If you're just interested in the data, click the links below to download the current processed datasets directly:
+## Installation
 
-- [Clean CLEA (`clean_clea.rds`)](https://raw.githubusercontent.com/jackobailey/clean_clea/main/_data/proc/clean_clea.rds)
-- [CLEA Simple Systems (`simple_systems.rds`)](https://raw.githubusercontent.com/jackobailey/clean_clea/main/_data/proc/simple_systems.rds)
+Install the development version from GitHub:
+
+``` r
+# install.packages("pak")
+pak::pak("jackobailey/clean_clea")
+```
+
+Once published to R-universe, it can also be installed with:
+
+``` r
+install.packages(
+  "cleaclean",
+  repos = c(
+    jackobailey = "https://jackobailey.r-universe.dev",
+    CRAN = "https://cloud.r-project.org"
+  )
+)
+```
+
+## Data
+
+The package exports two datasets:
+
+``` r
+data("clean_clea", package = "cleaclean")
+data("simple_systems", package = "cleaclean")
+```
+
+- `clean_clea` contains the corrected lower-chamber CLEA archive.
+- `simple_systems` contains the analysis-ready simple-electoral-systems
+  subset.
+
+Use `help("clean_clea", package = "cleaclean")` and
+`help("simple_systems", package = "cleaclean")` for variable
+documentation.
+
+## Methodology
+
+The maintainer pipeline verifies the pinned CLEA Release 18 source
+checksum, applies 610 auditable election-specific correction scripts,
+adds tracked manual patches, and validates both published datasets
+before replacing them. `simple_systems` combines the corrected archive
+with V-Dem and manual electoral-system classifications, then computes
+district-level electoral statistics.
+
+`simple_systems` excludes elections before 1900, systems not classified
+as simple, the United States and Panama, and elections that retain
+missing votes, missing seats, aggregate-party codes, or inconsistent
+vote and seat rankings. Some unusable source elections and rows are also
+removed by documented election-specific corrections.
+
+## Known limitations
+
+`clean_clea` preserves CLEA sentinel values and 888 duplicate rows where
+no audited correction has been made. The derived datasets remain subject
+to the coverage, coding decisions, and licensing terms of CLEA, V-Dem,
+and the cited manual sources. A full rebuild requires the pinned raw
+CLEA release, which cannot be distributed through this repository.
+
+## Reproducibility and raw data
+
+The repository includes every correction script and manually assembled
+input needed to audit the cleaning process. It intentionally does
+**not** include the raw CLEA distribution. Maintainers must download
+that file directly from CLEA before running `Rscript data-raw/build.R`.
+
+See [`data-raw/README.md`](data-raw/README.md) for build instructions
+and [`DATA-PROVENANCE.md`](DATA-PROVENANCE.md) for provenance and
+licensing notes.
+
+Use `citation("cleaclean")` for the package and source citations.
