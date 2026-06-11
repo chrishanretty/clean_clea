@@ -1,6 +1,6 @@
-# clean_clea
+# Clean CLEA
 
-`clean_clea` is my attempt to clean up [the Constituency-Level Elections Archive](https://electiondataarchive.org/data-and-documentation/clea-lower-chamber-elections-archive/) and to subset these data to [simple electoral systems](https://www.cambridge.org/core/books/votes-from-seats/components-of-simple-electoral-systems/CE8DD54C39683D46093EB299F29A49C9).
+[The Constituency-Level Elections Archive](https://electiondataarchive.org/data-and-documentation/clea-lower-chamber-elections-archive/) is a brilliant resource. However, it contains a large number of uncatalogued errors. `clean_clea` is my attempt to clean up the Constituency-Level Elections Archive and to subset these data to [simple electoral systems](https://www.cambridge.org/core/books/votes-from-seats/components-of-simple-electoral-systems/CE8DD54C39683D46093EB299F29A49C9).
 
 The repo contains all of the data and code needed to audit or replicate my changes. Wherever possible, I have also included links to the sources that I have used. Note that, in some cases, where data appeared unreliable, I have opted to remove them from the data.
 
