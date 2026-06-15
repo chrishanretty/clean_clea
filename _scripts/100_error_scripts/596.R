@@ -1,4 +1,4 @@
-ny# Sweden (September, 1968)
+# Sweden (September, 1968)
 
 # Data from:
 #
@@ -52,7 +52,7 @@ patch <- patch |>
                            name == "C" ~ 2,
                            name == "F" ~ 3,
                            name == "S" ~ 21,
-                           name == "K" ~ 18)) |>
+                           name == "K" ~ 23)) |>
     dplyr::select(cst, pty, seat) |>
     mutate(id = 596)
 
