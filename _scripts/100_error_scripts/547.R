@@ -37,8 +37,7 @@ rm(patch_mags)
 
 
 ## Now patch party totals
-parties <- c("Ap", "H"< "KrF", "Sp", "SV", "FrP")
-
+parties <- c("Ap", "H", "KrF", "Sp", "SV", "FrP")
 
 patch <- patch |>
     dplyr::mutate(across(all_of(parties), \(x) coalesce(x, 0L))) |>
