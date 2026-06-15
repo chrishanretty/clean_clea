@@ -46,7 +46,7 @@ patch <- patch |>
     tidyr::pivot_longer(cols = ends_with("_Mandate"),
                         values_to = "seat") |>
     mutate(pty = case_when(name == "H_Mandate" ~ 6,
-                           name == "B_Mandate" ~ 1,
+                           name == "B_Mandate" ~ 2,
                            name == "Fp_Mandate" ~ 3,
                            name == "S_Mandate" ~ 21,
                            name == "K_Mandate" ~ 18)) |>
