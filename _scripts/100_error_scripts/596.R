@@ -49,10 +49,10 @@ patch <- patch |>
     tidyr::pivot_longer(cols = c(H, C, F, S68, Mp, S, K),
                         values_to = "seat") |>
     mutate(pty = case_when(name == "H" ~ 6,
-                           name == "C" ~ 1,
+                           name == "C" ~ 2,
                            name == "F" ~ 3,
                            name == "S" ~ 21,
-                           name == "K" ~ 18)) |>
+                           name == "K" ~ 23)) |>
     dplyr::select(cst, pty, seat) |>
     mutate(id = 596)
 
