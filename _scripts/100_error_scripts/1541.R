@@ -60,6 +60,7 @@ dta <-
         "Christou Christos",
         "Sizopoulos Marinos"
       ),
+      pv1 = c(35867, 29288, 16323, 7457, 4265, 3077),
       seat = 1
     )
   )
