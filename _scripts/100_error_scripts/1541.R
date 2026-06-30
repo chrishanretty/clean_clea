@@ -6,12 +6,17 @@
 # https://www.parliament.cy/easyconsole.cfm/id/2053
 # https://en.wikipedia.org/wiki/2016_Cypriot_legislative_election
 
-# Restore the missing elected MPs in Lefkosia and Lemesos, and clear the four
-# later replacement rows in Lefkosia.
+# Correct EDEK's Larnaka vote total, restore the missing elected MPs in
+# Lefkosia and Lemesos, and clear the four later replacement rows in Lefkosia.
 
 dta <-
   dta |>
   mutate(
+    pv1 =
+      case_when(
+        id == 1541 & cst == 3 & pty == 11 ~ 2280,
+        TRUE ~ pv1
+      ),
     seat =
       case_when(
         id == 1541 & cst == 4 & can %in% c(

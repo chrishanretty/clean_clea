@@ -18,8 +18,8 @@ errors <-
         "d >= (1/sqrt(2)) * abs( pv[1] - ps[1])",
         "w <= w_max",
         "w >= w_min",
-        "s >= 1 | pv > tx",
-        "cor(v, s, method = 'kendall') == T"
+        "s == 0 & pv > txe",
+        "rank_size(v, s) == 0"
       ),
     errors = NA,
     cases = vector("list", length(test))
@@ -287,28 +287,28 @@ if(length(index[index == FALSE]) != 0){
 }
 
 
-## Test 10: s >= 1 | pv > tx ----------------------------------------------
+## Test 10: s == 0 & pv > txe ----------------------------------------------
 
 # Get cases where the test fails
 
 index <-
   lapply(
     split_dta,
-    \(x) all(ifelse(x$s > 0, x$s >= x$tx, TRUE))
+    \(x) any(x$s == 0 & x$pv > x$txe, na.rm = TRUE)
   ) |>
   unlist()
 
 
 # Populate table error count
 
-errors$errors[10] <- length(index[index == FALSE])
+errors$errors[10] <- length(index[index == TRUE])
 
 
 # Populate table error cases
 
-if(length(index[index == FALSE]) != 0){
+if(length(index[index == TRUE]) != 0){
 
-  errors$cases[[10]] <- names(index[index == FALSE])
+  errors$cases[[10]] <- names(index[index == TRUE])
 
 }
 

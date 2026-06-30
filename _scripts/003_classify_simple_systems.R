@@ -69,6 +69,15 @@ for(i in 1:nrow(missing_electoral_systems)){
         vdem$year == missing_electoral_systems$year[i]
       ] <- missing_electoral_systems$electoral_system[i]
 
+    if(is.na(missing_electoral_systems$threshold[i]) == FALSE){
+
+      vdem$threshold[
+        vdem$iso3 == missing_electoral_systems$iso3[i] &
+          vdem$year == missing_electoral_systems$year[i]
+        ] <- missing_electoral_systems$threshold[i]
+
+    }
+
   }
 
 }
@@ -349,15 +358,10 @@ vdem$simple_system[vdem$iso3 == "LVA"] <- FALSE
 vdem$simple_system[vdem$iso3 == "ECU"] <- FALSE
 
 
-# Recode threshold to show if there is or is not a legal threshold
+# Convert legal thresholds to vote shares
 
 vdem <-
   vdem |>
   mutate(
-    threshold =
-      if_else(
-        threshold > 0,
-        TRUE,
-        FALSE
-      )
+    threshold = threshold / 100
   )

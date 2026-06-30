@@ -22,6 +22,7 @@ library(here)
 
 # Load raw Elections Archive data
 
+
 here(
   "_data",
   "raw",
@@ -30,12 +31,15 @@ here(
 ) |>
   load()
 
+
 dta <- clea_lc_20251015
+
 
 rm(clea_lc_20251015)
 
 
 # Load convenience functions
+
 
 source(
   here(
@@ -50,6 +54,7 @@ source(
 
 # Loop over election-specific identifiers, correct any errors in the data, then
 # saved the cleaned CLEA data to disk
+
 
 source(
   here(

@@ -21,6 +21,7 @@ dta <-
   ungroup() |>
   mutate(
     tx = 1 / ( m + 1 ),
+    txe = pmax(tx, threshold, na.rm = TRUE),
     tr = 1 / ( m * nv2 ),
     tmin = pmin(tx, tr)
   )
