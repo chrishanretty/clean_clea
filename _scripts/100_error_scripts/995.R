@@ -55,3 +55,14 @@ patch <- patch |>
     dplyr::group_by(cst, pty) |>
     dplyr::summarize(seat = sum(seat), .groups = "drop") |>
     dplyr::mutate(id = 995)
+
+dta <- dta |>
+    dplyr::left_join(patch,
+              by = join_by(id, cst, pty),
+              suffix = c("", ".patch"),
+              relationship = "one-to-one") |>
+    dplyr::mutate(seat = case_when((is.na(seat) | seat == -990) ~ seat.patch,
+                            TRUE ~ seat)) |>
+    dplyr::select(-seat.patch)
+
+rm(patch)
