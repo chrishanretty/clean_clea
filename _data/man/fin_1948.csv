@@ -1,16 +1,16 @@
-"District","mag","ML ","SDP ","SKDL ","Kok ","RKP ","KE ","ÅS","Source","cst","cst_n"
-"Åland ",1,,,,,,,1,"https://en.wikipedia.org/wiki/1948_Finnish_parliamentary_election",1,"ahvenmnaan läänin"
-"Central Finland ",11,4,3,2,2,"","","",,14,"vaasan läänin itäinen"
-"Häme ",11,2,4,2,3,,,,,2,"hämeen läänin eteläinen"
-"Kymi ",32,12,10,3,6,,1,"",,6,"kymen läänin"
-"Lapland ",8,4,1,2,1,,,,,7,"lapin läänin"
-"North Karelia ",10,4,4,1,1,,,,,4,"kuopion läänin itäinen"
-"North Savo ",11,4,2,4,1,,,,,5,"kuopion läänin läntinen"
-"North Vaasa ",8,3,1,1,1,2,"","",,15,"vaasan läänin pohjoinen"
-"Oulu ",17,8,2,5,1,,1,"",,9,"oulun läänin"
-"Pirkanmaa ",12,1,5,3,3,"","","",,3,"hämeen läänin pohjoinen"
-"Satakunta ",13,3,4,3,3,,,,,10,"turun-porin läänin pohjoinen"
-"South Savo ",11,5,4,1,1,,,,,8,"mikkelin läänin"
-"South Vaasa ",10,3,1,1,2,3,"","",,13,"vaasan läänin eteläinen"
-"Uusimaa ",31,1,9,6,6,7,2,"",,12,"uudenmaan läänin"
-"Varsinais-Suomi ",14,2,4,4,2,1,1,,,11,"tutun-porin läänin eteläinen"
+District,mag,ML ,SDP ,SKDL ,Kok ,RKP ,KE ,ÅS,Source,cst,cst_n
+Åland ,1,,,,,1,,0,https://en.wikipedia.org/wiki/1948_Finnish_parliamentary_election,1,ahvenmnaan läänin
+Central Finland ,11,4,3,2,2,,,,,14,vaasan läänin itäinen
+Häme ,11,2,4,2,3,,,,,2,hämeen läänin eteläinen
+Kymi ,32,12,10,3,6,,1,,,6,kymen läänin
+Lapland ,8,4,1,2,1,,,,,7,lapin läänin
+North Karelia ,10,4,4,1,1,,,,,4,kuopion läänin itäinen
+North Savo ,11,4,2,4,1,,,,,5,kuopion läänin läntinen
+North Vaasa ,8,3,1,1,1,2,,,,15,vaasan läänin pohjoinen
+Oulu ,17,8,2,5,1,,1,,,9,oulun läänin
+Pirkanmaa ,12,1,5,3,3,,,,,3,hämeen läänin pohjoinen
+Satakunta ,13,3,4,3,3,,,,,10,turun-porin läänin pohjoinen
+South Savo ,11,5,4,1,1,,,,,8,mikkelin läänin
+South Vaasa ,10,3,1,1,2,3,,,,13,vaasan läänin eteläinen
+Uusimaa ,31,1,9,6,6,7,2,,,12,uudenmaan läänin
+Varsinais-Suomi ,14,2,4,4,2,1,1,,,11,tutun-porin läänin eteläinen
