@@ -1,16 +1,16 @@
-"District","mag","ML ","SKDL ","SDP ","Kok ","SK ","RKP ","TPSL ","VL ","ÅS","Source","cst","cst_n"
-"Åland ",1,,,,,,,,,1,"https://en.wikipedia.org/wiki/1962_Finnish_parliamentary_election",1,"ahvenmnaan läänin"
-"Central Finland ",11,3,3,2,1,1,,1,"","",,5,"keski-suomen läänin"
-"Häme ",14,3,3,4,3,1,"","","","",,3,"hämeen läänin eteläinen"
-"Helsinki ",20,,4,4,4,3,3,1,1,,,2,"helsinki läänin"
-"Kymi ",15,4,2,5,4,"","","","","",,7,"kymen läänin"
-"Lapland ",9,4,3,,1,1,,,,,,8,"lapin läänin"
-"North Karelia ",10,4,2,2,1,1,,,,,,11,"pohjoinen karialan läänin"
-"North Savo ",12,4,4,1,2,1,"","","","",,6,"kuopion läänin"
-"Oulu ",18,9,6,1,1,1,"","","","",,10,"oulun läänin"
-"Pirkanmaa ",12,1,4,3,3,1,"","","","",,4,"hämeen läänin pohjoinen"
-"Satakunta ",14,4,4,3,3,,,,,,,12,"turun-porin läänin pohjoinen"
-"South Savo ",11,5,1,3,2,"","","","","",,9,"mikkelin läänin"
-"Uusimaa ",17,2,4,5,2,1,3,"","","",,14,"uudenmaan läänin"
-"Vaasa ",20,7,3,2,3,,5,"","","",,15,"vaasan läänin"
-"Varsinais-Suomi ",16,3,4,3,2,2,2,,,,,13,"tutun-porin läänin eteläinen"
+District,mag,ML ,SKDL ,SDP ,Kok ,SK ,RKP ,TPSL ,VL ,ÅS,Source,cst,cst_n
+Åland ,1,,,,,,1,,,,https://en.wikipedia.org/wiki/1962_Finnish_parliamentary_election,1,ahvenmnaan läänin
+Central Finland ,11,3,3,2,1,1,,1,,,,5,keski-suomen läänin
+Häme ,14,3,3,4,3,1,,,,,,3,hämeen läänin eteläinen
+Helsinki ,20,,4,4,4,3,3,1,1,,,2,helsinki läänin
+Kymi ,15,4,2,5,4,,,,,,,7,kymen läänin
+Lapland ,9,4,3,,1,1,,,,,,8,lapin läänin
+North Karelia ,10,4,2,2,1,1,,,,,,11,pohjoinen karialan läänin
+North Savo ,12,4,4,1,2,1,,,,,,6,kuopion läänin
+Oulu ,18,9,6,1,1,1,,,,,,10,oulun läänin
+Pirkanmaa ,12,1,4,3,3,1,,,,,,4,hämeen läänin pohjoinen
+Satakunta ,14,4,4,3,3,,,,,,,12,turun-porin läänin pohjoinen
+South Savo ,11,5,1,3,2,,,,,,,9,mikkelin läänin
+Uusimaa ,17,2,4,5,2,1,3,,,,,14,uudenmaan läänin
+Vaasa ,20,7,3,2,3,,5,,,,,15,vaasan läänin
+Varsinais-Suomi ,16,3,4,3,2,2,2,,,,,13,tutun-porin läänin eteläinen

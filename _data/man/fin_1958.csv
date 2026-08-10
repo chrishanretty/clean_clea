@@ -1,17 +1,17 @@
-"District","mag","SKDL ","SDP ","ML ","Kok ","RKP ","SK ","TPSL ","ÅS","Source","cst","cst_n"
-"Åland ",1,,,,,,,,1,"https://en.wikipedia.org/wiki/1958_Finnish_parliamentary_election",1,"ahvenmnaan läänin"
-"Central Finland ",12,3,3,4,1,,1,"","",,15,"vaasan läänin itäinen"
-"Häme ",14,3,4,2,3,,1,1,"",,3,"hämeen läänin eteläinen"
-"Helsinki ",19,4,4,,5,3,2,1,,,2,"helsinki läänin"
-"Kymi ",15,2,5,4,3,,1,"","",,7,"kymen läänin"
-"Lapland ",9,4,1,3,1,,,,,,8,"lapin läänin"
-"North Karelia ",11,2,4,4,1,,,,,,5,"kuopion läänin itäinen"
-"North Savo ",12,4,2,5,1,,,,,,6,"kuopion läänin läntinen"
-"North Vaasa ",8,1,1,3,1,2,"","","",,16,"vaasan läänin pohjoinen"
-"Oulu ",18,7,2,7,1,,1,"","",,10,"oulun läänin"
-"Pirkanmaa ",13,5,3,1,3,,,1,"",,4,"hämeen läänin pohjoinen"
-"Satakunta ",14,4,4,3,3,,,,,,11,"turun-porin läänin pohjoinen"
-"South Savo ",12,1,5,5,1,,,,,,9,"mikkelin läänin"
-"South Vaasa ",10,2,1,2,2,3,"","","",,14,"vaasan läänin eteläinen"
-"Uusimaa ",16,3,5,2,1,4,1,"","",,13,"uudenmaan läänin"
-"Varsinais-Suomi ",16,5,4,3,2,1,1,,,,12,"tutun-porin läänin eteläinen"
+District,mag,SKDL ,SDP ,ML ,Kok ,RKP ,SK ,TPSL ,ÅS,Source,cst,cst_n
+Åland ,1,,,,,1,,,,https://en.wikipedia.org/wiki/1958_Finnish_parliamentary_election,1,ahvenmnaan läänin
+Central Finland ,12,3,3,4,1,,1,,,,15,vaasan läänin itäinen
+Häme ,14,3,4,2,3,,1,1,,,3,hämeen läänin eteläinen
+Helsinki ,19,4,4,,5,3,2,1,,,2,helsinki läänin
+Kymi ,15,2,5,4,3,,1,,,,7,kymen läänin
+Lapland ,9,4,1,3,1,,,,,,8,lapin läänin
+North Karelia ,11,2,4,4,1,,,,,,5,kuopion läänin itäinen
+North Savo ,12,4,2,5,1,,,,,,6,kuopion läänin läntinen
+North Vaasa ,8,1,1,3,1,2,,,,,16,vaasan läänin pohjoinen
+Oulu ,18,7,2,7,1,,1,,,,10,oulun läänin
+Pirkanmaa ,13,5,3,1,3,,,1,,,4,hämeen läänin pohjoinen
+Satakunta ,14,4,4,3,3,,,,,,11,turun-porin läänin pohjoinen
+South Savo ,12,1,5,5,1,,,,,,9,mikkelin läänin
+South Vaasa ,10,2,1,2,2,3,,,,,14,vaasan läänin eteläinen
+Uusimaa ,16,3,5,2,1,4,1,,,,13,uudenmaan läänin
+Varsinais-Suomi ,16,5,4,3,2,1,1,,,,12,tutun-porin läänin eteläinen
