@@ -118,3 +118,15 @@ write_rds(
   ),
   compress = "gz"
 )
+
+
+# Save cleaned CLEA data to a .dta file
+
+write_dta(
+  dta,
+  here(
+    "_data",
+    "proc",
+    "clean_clea.dta"
+  )
+)

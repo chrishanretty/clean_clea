@@ -7,4 +7,6 @@ The repo contains all of the data and code needed to audit or replicate my chang
 If you're just interested in the data, click the links below to download the current processed datasets directly:
 
 - [Clean CLEA (`clean_clea.rds`)](https://raw.githubusercontent.com/jackobailey/clean_clea/main/_data/proc/clean_clea.rds)
+- [Clean CLEA (`clean_clea.dta`)](https://www.dropbox.com/scl/fi/um6pyfsy5xwt7fsf2ud4p/clean_clea.dta?rlkey=osgpcv4kzluwgl2drs1fo8ls0&dl=1)
 - [CLEA Simple Systems (`simple_systems.rds`)](https://raw.githubusercontent.com/jackobailey/clean_clea/main/_data/proc/simple_systems.rds)
+- [CLEA Simple Systems (`simple_systems.dta`)](https://www.dropbox.com/scl/fi/jqctzx94ifjq6489mlml8/simple_systems.dta?rlkey=6vxiyaouk9ohx544c6oaiggkb&dl=1)
