@@ -122,7 +122,7 @@ write_rds(
 
 # Save cleaned CLEA data to a .dta file
 
-write_dta(
+write_compact_dta(
   dta,
   here(
     "_data",
@@ -130,3 +130,8 @@ write_dta(
     "clean_clea.dta"
   )
 )
+
+
+# Zip .dta
+
+zip_file("_data/proc/clean_clea.dta")

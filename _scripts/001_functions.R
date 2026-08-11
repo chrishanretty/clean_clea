@@ -535,3 +535,74 @@ impute_fptp_seats <-
       ungroup()
 
   }
+
+
+
+# Write compressed .dta files ---------------------------------------------
+
+# Arguments
+#
+# data: The data frame to modify
+# path: Path to save the file to
+
+prepare_for_stata <-
+  function(data) {
+    data[] <- lapply(data, function(x) {
+      if (is.character(x)) {
+        # Stata represents a missing string as an empty string
+        x[is.na(x)] <- ""
+        return(x)
+      }
+
+      # Safely convert integer-valued plain doubles to Stata long
+      if (is.double(x) && identical(class(x), "numeric")) {
+        safe <- is.na(x) |
+          (
+            is.finite(x) &
+              x == trunc(x) &
+              x >= -2147483647 &
+              x <= 2147483620
+          )
+
+        if (all(safe)) {
+          old_attributes <- attributes(x)
+          x <- as.integer(x)
+          attributes(x) <- old_attributes
+        }
+      }
+
+      x
+    })
+
+    data
+  }
+
+write_compact_dta <-
+  function(data, path) {
+    haven::write_dta(
+      prepare_for_stata(data),
+      path,
+      version = 14,
+      strl_threshold = 8
+    )
+  }
+
+
+
+# Zip files ---------------------------------------------------------------
+
+# Arguments
+#
+# path: Path to save the file to
+
+zip_file <- function(path) {
+  path <- normalizePath(path, mustWork = TRUE)
+
+  zip::zipr(
+    zipfile = paste0(path, ".zip"),
+    files = basename(path),
+    root = dirname(path),
+    compression_level = 9,
+    include_directories = FALSE
+  )
+}

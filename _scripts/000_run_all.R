@@ -120,7 +120,7 @@ write_rds(
 
 # Save to disk as .dta
 
-write_dta(
+write_compact_dta(
   dta,
   here(
     "_data",
@@ -128,3 +128,8 @@ write_dta(
     "simple_systems.dta"
   )
 )
+
+
+# Zip .dta
+
+zip_file("_data/proc/simple_systems.dta")
