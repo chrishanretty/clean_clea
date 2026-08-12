@@ -17,6 +17,7 @@ library(tidyverse)
 library(vdemdata)
 library(countrycode)
 library(piecemaker)
+library(haven)
 library(here)
 
 
@@ -104,7 +105,7 @@ source(
 )
 
 
-# Save to disk
+# Save to disk as .rds
 
 write_rds(
   dta,
@@ -115,3 +116,20 @@ write_rds(
   ),
   compress = "gz"
 )
+
+
+# Save to disk as .dta
+
+write_compact_dta(
+  dta,
+  here(
+    "_data",
+    "proc",
+    "simple_systems.dta"
+  )
+)
+
+
+# Zip .dta
+
+zip_file("_data/proc/simple_systems.dta")

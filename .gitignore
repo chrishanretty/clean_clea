@@ -5,3 +5,4 @@
 .Rproj.user/
 _codex/
 _data/raw/
+_data/proc/*.dta
